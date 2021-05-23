@@ -1,5 +1,6 @@
 package com.enset.cineam_app.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,5 +18,6 @@ public class Place {
     @ManyToOne
     private Salle salle;
     @OneToMany(mappedBy="place")
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Collection<Ticket> tickets;
 }
