@@ -1,13 +1,19 @@
-package com.enset.cineam_app;
+package com.enset.cinema_app;
 
-import com.enset.cineam_app.service.ICinemaInitService;
+import com.enset.cinema_app.entities.Film;
+import com.enset.cinema_app.entities.Salle;
+import com.enset.cinema_app.entities.Ticket;
+import com.enset.cinema_app.service.ICinemaInitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 
 @SpringBootApplication
 public class CineamAppApplication implements CommandLineRunner {
+    @Autowired
+    private RepositoryRestConfiguration repositoryRestConfiguration;
     @Autowired
     private ICinemaInitService cinemaInitService;
     public static void main(String[] args) {
@@ -16,6 +22,7 @@ public class CineamAppApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        repositoryRestConfiguration.exposeIdsFor(Film.class, Salle.class, Ticket.class);
         cinemaInitService.initVilles();
         cinemaInitService.initCinemas();
         cinemaInitService.initSalles();
@@ -23,8 +30,6 @@ public class CineamAppApplication implements CommandLineRunner {
         cinemaInitService.initSeances();
         cinemaInitService.initCategories();
         cinemaInitService.initFilms();
-        cinemaInitService.initProjections();
-        cinemaInitService.initTickets();
         cinemaInitService.initProjections();
         cinemaInitService.initTickets();
     }

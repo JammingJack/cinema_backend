@@ -1,7 +1,7 @@
-package com.enset.cineam_app.service;
+package com.enset.cinema_app.service;
 
-import com.enset.cineam_app.dao.*;
-import com.enset.cineam_app.entities.*;
+import com.enset.cinema_app.dao.*;
+import com.enset.cinema_app.entities.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;

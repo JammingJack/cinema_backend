@@ -1,4 +1,4 @@
-package com.enset.cineam_app.service;
+package com.enset.cinema_app.service;
 
 public interface ICinemaInitService {
     public void initVilles();

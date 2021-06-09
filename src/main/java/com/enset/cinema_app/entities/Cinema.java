@@ -1,10 +1,9 @@
-package com.enset.cineam_app.entities;
+package com.enset.cinema_app.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import javax.persistence.*;
 import java.util.Collection;

@@ -1,11 +1,11 @@
-package com.enset.cineam_app.dao;
+package com.enset.cinema_app.dao;
 
-import com.enset.cineam_app.entities.Ville;
+import com.enset.cinema_app.entities.Film;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RepositoryRestResource
 @CrossOrigin("*")
-public interface VilleRepository extends JpaRepository<Ville,Long> {
+public interface FilmRepository extends JpaRepository<Film,Long> {
 }

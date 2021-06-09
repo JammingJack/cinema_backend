@@ -1,9 +1,9 @@
-package com.enset.cineam_app.web;
+package com.enset.cinema_app.web;
 
-import com.enset.cineam_app.dao.FilmRepository;
-import com.enset.cineam_app.dao.TicketRepository;
-import com.enset.cineam_app.entities.Film;
-import com.enset.cineam_app.entities.Ticket;
+import com.enset.cinema_app.dao.FilmRepository;
+import com.enset.cinema_app.dao.TicketRepository;
+import com.enset.cinema_app.entities.Film;
+import com.enset.cinema_app.entities.Ticket;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -17,6 +17,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 public class CinemaRestController {
     @Autowired

@@ -1,11 +1,11 @@
-package com.enset.cineam_app.dao;
+package com.enset.cinema_app.dao;
 
-import com.enset.cineam_app.entities.Ticket;
+import com.enset.cinema_app.entities.Categorie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RepositoryRestResource
 @CrossOrigin("*")
-public interface TicketRepository extends JpaRepository<Ticket,Long> {
+public interface CategoryRepository extends JpaRepository<Categorie,Long> {
 }

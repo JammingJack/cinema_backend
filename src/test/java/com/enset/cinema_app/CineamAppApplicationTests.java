@@ -1,4 +1,4 @@
-package com.enset.cineam_app;
+package com.enset.cinema_app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

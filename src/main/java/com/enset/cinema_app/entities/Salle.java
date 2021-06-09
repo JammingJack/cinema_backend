@@ -1,4 +1,4 @@
-package com.enset.cineam_app.entities;
+package com.enset.cinema_app.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
