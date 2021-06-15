@@ -1,16 +1,12 @@
 package com.enset.cinema_app.entities;
 
-import com.enset.cinema_app.entities.Film;
-import com.enset.cinema_app.entities.Salle;
-import com.enset.cinema_app.entities.Seance;
-import com.enset.cinema_app.entities.Ticket;
 import org.springframework.data.rest.core.config.Projection;
 
 import java.util.Collection;
 import java.util.Date;
 
-@Projection(name="filmNeededInfoProjection",types={com.enset.cinema_app.entities.Projection.class})
-public interface FilmProjection {
+@Projection(name="p1" , types= {org.sid.cinema.entities.Projection.class})
+public interface ProjectionProj {
     public Long getId();
     public double getPrix();
     public Date getDateProjection();

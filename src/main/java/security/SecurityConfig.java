@@ -1,4 +1,5 @@
-package com.enset.cinema_app.security;
+/*
+package security;
 
 import org.springframework.context.annotation.Bean;
 
@@ -31,8 +32,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //.formLogin().loginPage("/authentication");
         http.formLogin();
         http.authorizeRequests().antMatchers("/images/**","/payerTickets/**"
-                ,"/villes/**").hasRole("ADMIN");
-        http.authorizeRequests().anyRequest().authenticated();
+                ).hasRole("ADMIN");
+        //http.authorizeRequests().anyRequest().authenticated();
         http.csrf();
         http.exceptionHandling().accessDeniedPage("/notAuthorized");
     }
@@ -41,3 +42,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 }
+*/
