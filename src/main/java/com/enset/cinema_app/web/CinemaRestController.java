@@ -1,10 +1,10 @@
 package com.enset.cinema_app.web;
 
 import lombok.Data;
-import org.sid.cinema.dao.FilmRepository;
-import org.sid.cinema.dao.TicketRepository;
-import org.sid.cinema.entities.Film;
-import org.sid.cinema.entities.Ticket;
+import com.enset.cinema_app.dao.FilmRepository;
+import com.enset.cinema_app.dao.TicketRepository;
+import com.enset.cinema_app.entities.Film;
+import com.enset.cinema_app.entities.Ticket;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.transaction.annotation.Transactional;

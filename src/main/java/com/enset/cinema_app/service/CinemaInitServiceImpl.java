@@ -1,7 +1,7 @@
 package com.enset.cinema_app.service;
 
-import org.sid.cinema.dao.*;
-import org.sid.cinema.entities.*;
+import com.enset.cinema_app.dao.*;
+import com.enset.cinema_app.entities.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -70,7 +70,7 @@ public class CinemaInitServiceImpl implements ICinemaInitService{
 			}});
 	}
 	@Override
-	public void initPalces() {
+	public void initPlaces() {
 		salleRepository.findAll().forEach(salle->{
 			for(int i=0;i<salle.getNombrePlace();i++) {
 				Place place=new Place();
