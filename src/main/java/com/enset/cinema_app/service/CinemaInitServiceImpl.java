@@ -48,7 +48,7 @@ public class CinemaInitServiceImpl implements ICinemaInitService{
 	@Override
 	public void initCinemas() {
 		villeRepository.findAll().forEach(v->{
-			Stream.of("MegaRama","IMAX","FOUNOUN","CHAHRAZAD","DAOULIZ")
+			Stream.of("MegaRama","Imax","Founoun","Chahrazad","Daouliz")
 			.forEach(nameCinema->{
 				Cinema cinema=new Cinema();
 				cinema.setName(nameCinema);
